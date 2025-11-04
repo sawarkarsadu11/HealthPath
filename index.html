@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPath - Smart Diet Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HealthPath</h1>
+        <h2>Smart Diet Optimizer</h2>
+        
+        <div id="food-items">
+            <div class="food-item">
+                <h3>Apple</h3>
+                <p>Calories: 95 | Nutrition: 0.5 per 100g</p>
+            </div>
+            <div class="food-item">
+                <h3>Egg</h3>
+                <p>Calories: 70 | Nutrition: 0.7 per 100g</p>
+            </div>
+            <div class="food-item">
+                <h3>Milk</h3>
+                <p>Calories: 42 | Nutrition: 0.3 per 100g</p>
+            </div>
+            <div class="food-item">
+                <h3>Almonds</h3>
+                <p>Calories: 7 | Nutrition: 0.2 per 1g</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="maxCalories">Maximum Calories:</label>
+            <input type="number" id="maxCalories" value="300" min="1">
+        </div>
+
+        <button onclick="optimizeDiet()">Optimize Diet</button>
+
+        <div id="result">
+            <h3>Optimized Meal Plan:</h3>
+            <div id="optimized-plan"></div>
+            <p id="total-calories"></p>
+            <p id="total-nutrition"></p>
+            <p id="efficiency"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
